@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICEELITE - My Wishlist</title>
+    <link rel="stylesheet" href="ggk.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-lg-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="iceelite-logo.png" alt="ICEELITE LOGO" style="height: 50px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">SHOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">BLOG</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            SPORTS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="shop.html">Team Sports</a></li>
+                            <li><a class="dropdown-item" href="shop.html">Individual Sports</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="shop.html">Equipment</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="LOGIN.html">SIGN UP</a>
+                    </li>
+                </ul>
+                <a href="cart.html" class="nav-link text-white me-3">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container section-p1">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>My Wishlist</h1>
+                <p>Save your favorite sports equipment for later!</p>
+                
+                <div id="wishlist-container">
+                    <div class="empty-wishlist text-center" style="padding: 60px 20px;">
+                        <i class="fas fa-heart" style="font-size: 64px; color: #ddd; margin-bottom: 20px;"></i>
+                        <h3>Your wishlist is empty</h3>
+                        <p>Start adding items to your wishlist by clicking the heart icon on products you love!</p>
+                        <a href="shop.html" class="btn btn-primary">Continue Shopping</a>
+                    </div>
+                </div>
+                
+                <div id="wishlist-items" style="display: none;">
+                    <!-- Wishlist items will be populated here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="section-p1 border border-dark">
+        <div class="col">
+            <img class="logo" src="iceelite-logo.png" alt="ICEELITE" style="height: 40px;">
+            <h4>Contact</h4>
+            <p><strong>Phone:</strong> +1 (555) 123-SPORT</p>
+            <p><strong>Email:</strong> info@iceelite.com</p>
+            <p><strong>Address:</strong> 456 Athletic Avenue, Sports City, SC 54321</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About Us</a>
+            <a href="delivery.html">Delivery Information</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="LOGIN.html">Sign In</a>
+            <a href="cart.html">View Cart</a>
+            <a href="wishlist.html">My Wishlist</a>
+            <a href="help.html">Help</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>Download our mobile app for the best shopping experience.</p>
+            <div class="row">
+                <img src="app.jpg" alt="">
+                <img src="play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="pay.png" alt="">
+        </div>
+    </footer>
+
+    <script>
+        // Wishlist functionality that integrates with cart.js
+        function loadWishlist() {
+            const wishlistItems = JSON.parse(localStorage.getItem('wishlistItems')) || [];
+            const wishlistContainer = document.getElementById('wishlist-container');
+            const emptyWishlist = document.querySelector('.empty-wishlist');
+            const wishlistItemsDiv = document.getElementById('wishlist-items');
+            
+            if (wishlistItems.length === 0) {
+                emptyWishlist.style.display = 'block';
+                wishlistItemsDiv.style.display = 'none';
+            } else {
+                emptyWishlist.style.display = 'none';
+                wishlistItemsDiv.style.display = 'block';
+                
+                let itemsHTML = '<div class="row">';
+                wishlistItems.forEach((item, index) => {
+                    itemsHTML += `
+                        <div class="col-md-3 mb-4">
+                            <div class="card">
+                                <img src="${item.image}" class="card-img-top" alt="${item.name}" style="height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title">${item.name}</h5>
+                                    <p class="card-text text-muted">${item.brand}</p>
+                                    <p class="card-text"><strong>${item.price}</strong></p>
+                                    <button class="btn btn-primary btn-sm me-2" onclick="moveToCart('${item.id}')">Add to Cart</button>
+                                    <button class="btn btn-outline-danger btn-sm" onclick="removeFromWishlist('${item.id}')">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+                itemsHTML += '</div>';
+                wishlistItemsDiv.innerHTML = itemsHTML;
+            }
+        }
+        
+        function removeFromWishlist(productId) {
+            if (typeof wishlist !== 'undefined') {
+                wishlist.removeItem(productId);
+                loadWishlist();
+            }
+        }
+        
+        function moveToCart(productId) {
+            const wishlistItems = JSON.parse(localStorage.getItem('wishlistItems')) || [];
+            const item = wishlistItems.find(item => item.id === productId);
+            
+            if (item && typeof cart !== 'undefined') {
+                cart.addItem(item);
+                wishlist.removeItem(productId);
+                loadWishlist();
+            }
+        }
+        
+        // Load wishlist on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            loadWishlist();
+            // Update cart count display
+            if (typeof cart !== 'undefined') {
+                cart.updateCartDisplay();
+            }
+        });
+    </script>
+    <script src="cart.js"></script>
+</body>
+</html>
+
