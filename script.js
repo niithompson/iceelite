@@ -34,3 +34,4 @@ smalling[3].onclick = function(){
 
 }
 
+

@@ -461,18 +461,24 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center ;
-    background-image: url(/iceelite/b1.jpg);
+    background-image: url(img/banner_70_off.png);
     width: 100%;
     height: 40vh;
     background-size: cover;
     background-position: center;
-
+    position: relative;
 }
 #shop-banner h4 {
-    color: #f3f1f1;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    z-index: 2;
 }
 #shop-banner h2{
-    color: #12df4c;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    z-index: 2;
 }
 
 #pagination{
