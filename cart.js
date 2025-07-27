@@ -111,11 +111,15 @@ function extractProductInfo(productElement) {
     const name = productElement.querySelector('.des h5');
     const price = productElement.querySelector('.des h4');
     
+    // Get the image filename without path
+    const imageSrc = img.src;
+    const imageFilename = imageSrc.split('/').pop();
+    
     return {
         id: generateProductId(name.textContent, brand.textContent),
         name: name.textContent,
         price: price.textContent,
-        image: img.src,
+        image: imageFilename, // Store only the filename
         brand: brand.textContent
     };
 }
