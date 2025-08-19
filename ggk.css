@@ -376,6 +376,7 @@ footer{
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: #041E42;
+    color: white;
 
 }
 footer .col{
@@ -390,21 +391,23 @@ footer .logo{
 h4{
     font-size: 20px;
     padding-bottom: 20px;
-    color: #222;
+    color: white;
 }
 footer h4{
     font-size: 20px;
     padding-bottom: 20px;
+    color: #fefdf7;
 }
 footer p{
     font-size: 13px;
     font-weight: 600;
     margin: 0 0 8px 0;
+    color: #fefdf7;
 }
 footer a{
     font-size: 13px;
     text-decoration: none;
-    color: #222;
+    color: white;
     margin-bottom: 5px;
 }
 footer .follow{
